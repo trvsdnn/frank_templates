@@ -1,8 +1,6 @@
 <h1>Frank Templates</h1>
 These are templates you can clone into your own <code>~/.frank-templates</code> folder.
 
-So far there is only one, but the list will be here:
-
 <ol>
     <li>
         HTML5 Boilderplate for Frank (with sass for css)<br/>
