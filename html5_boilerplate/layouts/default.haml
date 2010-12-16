@@ -31,9 +31,9 @@
   
   / Javascript at the bottom for fast page loading
   / Grab Google CDN's jQuery. fall back to local if necessary
-  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"}
+  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"}
   :javascript
-    !window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))    / scripts concatenated and minified via ant build script
+    !window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.4.min.js"%3E%3C/script%3E'))    / scripts concatenated and minified via ant build script
   %script{:src => "js/plugins.js"}
   %script{:src => "js/script.js"}
   / end concatenated and minified scripts
