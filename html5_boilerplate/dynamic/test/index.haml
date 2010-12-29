@@ -1,0 +1,27 @@
+layout: nil
+-----------------------------------META
+!!! 5
+%html{:lang => "en"}
+	%head
+		%title QUnit Tests
+		%link{:href => "qunit/qunit.css", :media => "screen", :rel => "stylesheet"}
+		/ reference your own javascript files here
+		%script{:src => "../js/libs/modernizr-1.6.min.js"}
+		%script{:charset => "utf-8", :src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", :type => "text/javascript"}
+		:javascript
+			!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))
+		
+		%script{:src => "../js/plugins.js"}
+		%script{:src => "../js/script.js"}
+		
+		/ test runner files
+		%script{:src => "qunit/qunit.js"}
+		%script{:src => "tests.js"}
+	%body.flora
+		%h1#qunit-header QUnit Test Suite
+		%h2#qunit-banner
+		#qunit-testrunner-toolbar
+		%h2#qunit-userAgent
+		%ol#qunit-tests
+		#qunit-fixture
+		=refresh
