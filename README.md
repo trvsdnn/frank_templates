@@ -11,4 +11,7 @@ These are templates you can clone into your own <code>~/.frank-templates</code> 
         - You can change the file extensions to css and stick the css folder in the static folder for regular css editing.<br/>
         *If you don't have scss supported, do gem install haml*
     </li>
+    <li>
+        <a href="http://www.getskeleton.com/">Skeleton</a>, a boilerplate for responsive, mobile-friendly development.
+    </li>
 </ol>
